@@ -12,8 +12,8 @@ pub fn build(b: *std.Build) void {
     });
     b.installArtifact(exe);
     b.installFile(
-        "src/systemd/wslg@.service",
-        "usr/lib/systemd/system/wslg@.service",
+        "src/systemd/override.conf",
+        "etc/systemd/system/user-runtime-dir@.service.d/override.conf",
     );
 
     const run_cmd = b.addRunArtifact(exe);
