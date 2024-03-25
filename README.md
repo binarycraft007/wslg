@@ -37,7 +37,6 @@ This command starts Wayland for the WSL user with UID 1000.
 
 **Important Notes:**
 
-* This program requires access to the `std` library, which might not be available in all Rust environments.
 * Ensure you have appropriate permissions to manage symlinks in the specified locations.
 * The provided symlink configuration (`symlinkMap`) might need adjustments depending on your specific WSL setup.
 
